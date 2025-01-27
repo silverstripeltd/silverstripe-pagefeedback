@@ -16,7 +16,8 @@ It allows the user to rate the page out of five (5) and allows them to optionall
 The users IP address and their PHP Session ID is recorded on a per-page basis so that a user can only submit feedback once for that specific page.
 
 ## Requirements
-* silverstripe/cms: "^4.0"
+* `silverstripe/cms` ^4 or ^5 
+
 
 ## Installation
 
@@ -30,7 +31,7 @@ composer require vulcandigital/silverstripe-pagefeedback "^2"
 
 This module is predominantly both a `DataExtension` and a `Extension`. You must apply them on the page type(s) and their respective controller(s) where you wish to be able to render the feedback form.
 
-If you wanted to enable it's functionality on all pages you would:
+If you wanted to enable its functionality on all pages you would:
 
 ```yml
 Page:
@@ -42,7 +43,7 @@ PageController:
     - Vulcan\PageFeedback\Extensions\PageFeedbackControllerExtensions
 ```
 
-or for a specific page type
+or for a specific page type:
 
 ```yml
 Vulcan\UserDocs\UserDocsPage:
